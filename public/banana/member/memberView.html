@@ -77,19 +77,28 @@
     </tr>
     <tr>
         <td width="150px"><b>이메일 마케팅 수신 동의</b></td>
-        <td width="150px">동의함  동의하지 않음</td>
+        <td width="200px">
+        
+        <input type="radio" name=" agree" value="동의함" checked="checked">동의함
+		<input type="radio" name="agree" value="동의안함">동의하지 않음</td>
         <td><b>추천인</b></td>
         <td></td>
     </tr>
     <tr>
         <td><b>비밀번호 문제</b></td>
-        <td></td>
+        <td>내가 가장 자주 간 곳은?</td>
         <td><b>비밀번호 답</b></td>
-        <td></td>
+        <td><select name="answer">
+    		<option value="">비밀번호 답</option>
+        	<option value="피시방">피시방</option>
+        	<option value="노래방">노래방</option>
+        	<option value="도서관">도서관</option>
+        	<option value="학원">학원</option>
+        </select></td>
     </tr>
     <tr>
         <td><b>사진</b></td>
-        <td><img src="/image/123213.jpg"></td>
+        <td><img src="../image/123213.jpg" width="150px"></td>
         <td><b>SNS</b></td>
         <td></td>
     </tr>
@@ -123,25 +132,27 @@
 	
 	<td colspan="4" bgcolor="#9FA8DA"><font color="#FFFFFF"><b>취미</b></font></td>
 	<tr>
-		<td>독서</td>
-		<td>영화 감상</td>
-		<td>게임</td>
-		<td>노래 감상</td>
+		<td><input type="checkbox" name="hobby" value="독서" checked="checked">독서</td>
+		<td><input type="checkbox" name="hobby" value="영화감상" checked="checked">영화감상</td>
+		<td><input type="checkbox" name="hobby" value="게임" checked="checked">게임</td>
+		<td><input type="checkbox" name="hobby" value="노래감상" checked="checked">노래 감상</td>
 	</tr>
 	<tr>
-		<td>이 스포츠 경기 시청</td>
-		<td>만화</td>
-		<td>유튜브 시청</td>
-		<td>퍼즐</td>
+		<td><input type="checkbox" name="hobby" value="경기시청" checked="checked">이 스포츠 경기 시청</td>
+		<td><input type="checkbox" name="hobby" value="만화감상">만화 감상</td>
+		<td><input type="checkbox" name="hobby" value="유튜브시청" checked="checked">유튜브 시청</td>
+		<td><input type="checkbox" name="hobby" value="영화감상">퍼즐</td>
 	</tr>
 
 	<td colspan="4" bgcolor="#9FA8DA"><font color="#FFFFFF">결혼 여부</font></td>
 	
 	<tr>
 		<td><b>결혼 여부</b></td>
-		<td>미혼 기혼</td>
+		<td><input type="radio" name="marry1" value="미혼" checked="checked">미혼
+			<input type="radio" name="marry1" value="기혼">기혼</td>
 		<td><b>자녀 유무</b></td>
-		<td>있음 없음</td>
+		<td><input type="radio" name="marry2" value="있음">있음
+			<input type="radio" name="marry2" value="없음" checked="checked">없음</td>
 	</tr>
 	
 	<td colspan="4" bgcolor="#9FA8DA"><font color="#FFFFFF">좋아하는 색</font></td>
@@ -161,11 +172,17 @@
 	<td colspan="4" bgcolor="#9FA8DA"><font color="#FFFFFF"><b>개인정보 유효기간</b></font></td>
 	
 	<tr>
-		<td>1년</td>
-		<td>3년</td>
-		<td>5년</td>
-		<td>10년</td>		
+		<td><input type="radio" name="info" value="1years">1년</td>
+		<td><input type="radio" name="info" value="3years">3년</td>
+		<td><input type="radio" name="info" value="5years">5년</td>
+		<td><input type="radio" name="info" value="10years" checked="checked">10년</td>		
 	</tr>
+	
+	
 </table>
+
+	<form name="input" method="post" action="">
+		<input type="submit" value="전송">
+	</form>
 </body>
 </html>
