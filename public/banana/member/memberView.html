@@ -35,7 +35,7 @@ tr, td {
 </head>
 
 <body>
-	<tableW>
+	<table>
 		●회원 정보
 		<tr>
 			<td colspan="4" bgcolor="#9FA8DA"><font color="#FFFFFF">회원
@@ -70,7 +70,10 @@ tr, td {
 			<td><b>전화번호</b></td>
 			<td>010-1234-5678</td>
 			<td><b>모바일 마케팅 수신 동의</b></td>
-			<td>동의함 동의하지 않음</td>
+			<td><input type="radio" name=" agree1" value="동의함"
+				checked="checked">동의함 
+				<input type="radio" name="agree1"
+				value="동의안함">동의하지 않음</td>
 		</tr>
 		<tr>
 			<td><b>팩스번호</b></td>
@@ -80,8 +83,9 @@ tr, td {
 		</tr>
 		<tr>
 			<td><b>이메일 마케팅 수신 동의</b></td>
-			<td><input type="radio" name=" agree" value="동의함"
-				checked="checked">동의함 <input type="radio" name="agree"
+			<td><input type="radio" name=" agree2" value="동의함"
+				checked="checked">동의함 
+				<input type="radio" name="agree2"
 				value="동의안함">동의하지 않음</td>
 			<td><b>추천인</b></td>
 			<td></td>
@@ -115,43 +119,41 @@ tr, td {
 					참여</font></td>
 		</tr>
 		<tr>
-			<td><b>번호</b></td>
+			<td><b>1</b></td>
 			<td>프로젝트 명</td>
-			<td>참여기간</td>
+			<td><input type="date"></td>
 			<td>역할</td>
 		</tr>
 		<tr>
-			<td><b>번호</b></td>
+			<td><b>2</b></td>
 			<td>프로젝트 명</td>
-			<td>참여기간</td>
+			<td><input type="date"></td>
 			<td>역할</td>
 		</tr>
 		<tr>
-			<td><b>번호</b></td>
+			<td><b>3</b></td>
 			<td>프로젝트 명</td>
-			<td>참여기간</td>
+			<td><input type="date"></td>
 			<td>역할</td>
 		</tr>
 
 		<td colspan="4" bgcolor="#9FA8DA"><font color="#FFFFFF"><b>취미</b></font></td>
 		<tr>
-			<td><input type="checkbox" name="hobby" value="독서"
-				checked="checked">독서</td>
-			<td><input type="checkbox" name="hobby" value="영화감상"
-				checked="checked">영화감상</td>
-			<td><input type="checkbox" name="hobby" value="게임"
-				checked="checked">게임</td>
-			<td><input type="checkbox" name="hobby" value="노래감상"
-				checked="checked">노래 감상</td>
-		</tr>
-		<tr>
-			<td><input type="checkbox" name="hobby" value="경기시청"
-				checked="checked">이 스포츠 경기 시청</td>
-			<td><input type="checkbox" name="hobby" value="만화감상">만화
-				감상</td>
-			<td><input type="checkbox" name="hobby" value="유튜브시청"
-				checked="checked">유튜브 시청</td>
-			<td><input type="checkbox" name="hobby" value="영화감상">퍼즐</td>
+			<td colspan="4"><input type="checkbox" name="hobby" value="독서"
+				checked="checked">독서
+			<input type="checkbox" name="hobby" value="영화감상"
+				checked="checked">영화감상
+			<input type="checkbox" name="hobby" value="게임"
+				checked="checked">게임
+			<input type="checkbox" name="hobby" value="노래감상"
+				checked="checked">노래 감상
+			<input type="checkbox" name="hobby" value="경기시청"
+				checked="checked">이 스포츠 경기 시청
+			<input type="checkbox" name="hobby" value="만화감상">만화
+				감상
+			<input type="checkbox" name="hobby" value="유튜브시청"
+				checked="checked">유튜브 시청
+			<input type="checkbox" name="hobby" value="영화감상">퍼즐</td>
 		</tr>
 
 		<td colspan="4" bgcolor="#9FA8DA"><font color="#FFFFFF">결혼
@@ -179,19 +181,18 @@ tr, td {
 
 		<td colspan="4" bgcolor="#9FA8DA"><font color="#FFFFFF"><b>자기소개</b></font></td>
 		<tr>
-			<td colspan="4">어쩌구저쩌구 안녕하세요 배예은이라고합니다 다들 새해를 맞아 행복하고 즐거운 날
-				보내셨으면 좋겠고 다들 즐거운 소식만 들리는 날이었으면 좋겠습니다 그리고 지금은 오후 여덟 시가 넘었는데 얼른 끝내고 밥
-				먹고 싶습니다 진짜 배고픕니다</td>
+			<td colspan="4">
+			<textarea rows="5" cols="108" name="contents">어쩌구저쩌구 안녕하세요 배예은이라고합니다 다들 새해를 맞아 행복하고 즐거운 날 보내셨으면 좋겠고 다들 즐거운 소식만 들리는 날이었으면 좋겠습니다 그리고 지금은 오후 여덟 시가 넘었는데 얼른 끝내고 밥 먹고 싶습니다 진짜 배고픕니다</textarea></td>
 		</tr>
 
 		<td colspan="4" bgcolor="#9FA8DA"><font color="#FFFFFF"><b>개인정보
 					유효기간</b></font></td>
 
 		<tr>
-			<td><input type="radio" name="info" value="1years">1년</td>
-			<td><input type="radio" name="info" value="3years">3년</td>
-			<td><input type="radio" name="info" value="5years">5년</td>
-			<td><input type="radio" name="info" value="10years"
+			<td colspan="4"><input type="radio" name="info" value="1years">1년
+			<input type="radio" name="info" value="3years">3년
+			<input type="radio" name="info" value="5years">5년
+			<input type="radio" name="info" value="10years"
 				checked="checked">10년</td>
 		</tr>
 
