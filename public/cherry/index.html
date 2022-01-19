@@ -8,24 +8,70 @@
 
 <title>배예은</title>
 
+<style>
+	body{
+		background-image: url(image/110.jpg);
+
+		font-family: '나눔고딕';
+
+		
+	}
+	
+	table{
+		width:600px;
+		height:300px;
+		
+		background-image : url(image/99.jpg);	
+		
+		margin-right: auto;
+		margin-left: auto;
+		
+		padding:13px;
+		
+		table-layout: auto;
+		
+		font-family: '나눔고딕';
+	}
+
+		.click{
+			font-size:12px;
+		}
+	a{
+		text-decoration: none; color: black;
+	
+	}
+</style>
 
 </head>
 
 <body>
-<h1>apple project</h1>
-	<ul>
-		<li><a href="apple/member/memberList.html">회원관리</a></li>
-	</ul>
 
-<h1>banana project</h1>
-	<ul>
-		<li><a href="member/memberList.html">회원관리</a></li>
-	</ul>
+<table>
+<caption><h2>회원 정보 보기</h2></caption>
+<br><br><br><br>
 
-<h1>cherry project</h1>
-	<ul>
-		<li><a href="member/memberList.html">회원관리</a></li>
-	</ul>
+	<tr>
+		<td>
+			<a href="apple/member/memberList.html"><h3>apple project</h3></a>
+		</td>
+		
+		<td>
+			<a href="banana/member/memberList.html"><h3>banana project</h3></a>
+		</td>
+		<td> 
+			<a href="cherry/member/memberList.html"><h3>cherry project</h3></a>
+		</td>
+	</tr>
+	
+
+	<tr>		
+		<td colspan="3">
+			<P class="click">이름을 클릭하시면 해S당 회원 관리 페이지로 이동됩니다!</P>
+		</td>
+	</tr>
+		
+</table>
+
 		
 </body>
 </html>

@@ -13,23 +13,28 @@
 <style>
 .table {
 
-	width:50%;
+	width:800px;
 	margin:auto;
 		
 	text-align:center;
 		
 	font-family: 'monospace';
-		
+	font-size: 11px;
 		
 	padding:10px;
 	/*원하는 방향으로만 하고 싶다면 right, left 지정*/
 }
 
 	img{
-		width:150px;
-		height: 150px;
+		width:100px;
+		height: 100px;
 		
 		border-radius: 50%;
+	}
+	
+	.btn{
+	 	font-size:13px;
+	 	padding: 5px;
 	}
 </style>
 
@@ -84,12 +89,22 @@
 			<th scope="col"><b>전화번호</b></th>
 			<td>010-1234-5678</td>
 			<th scope="col"><b>모바일 마케팅 수신 동의</b></th>
-			<td><input type="radio" name=" agree1" value="동의함"
-				checked="checked">동의함 
-				<input type="radio" name="agree1"
-				value="동의안함">동의하지 않음</td>
-		</tr>
-		
+
+			<div class="form-check">	
+				<td>	
+					<input class="form-check-input" type="radio" name=" agree1" 
+					id="agree1" value="동의함" checked="checked">
+					<label class="form-check-label" for="agree1">동의함</label>			
+					<input class="form-check-input" type="radio" name="agree1"
+					id="agree1" value="동의안함">동의하지 않음
+					<label class="form-check-label" for="agree1">동의하지 않음</label>
+				</td>
+			</div>
+				
+
+
+		</tr>	
+			
 		<tr>
 			<th scope="col"><b>팩스번호</b></th>
 			<td>없음</td>
@@ -98,26 +113,38 @@
 		</tr>
 		
 		<tr>
+			
 			<th scope="col"><b>이메일 마케팅 수신 동의</b></th>
-			<td><input type="radio" name=" agree2" value="동의함"
-				checked="checked">동의함 
-				<input type="radio" name="agree2"
-				value="동의안함">동의하지 않음</td>
+			
+			<div class="form-check">				
+				<td>
+					<input class="form-check-input" type="radio" name=" agree2" 
+					id="agree2" value="동의함">
+					<label class="form-check-label" for="agree2">동의함</label>			
+					<input class="form-check-input" type="radio" name="agree2"
+					id="agree2" value="동의안함" checked="checked">
+					<label class="form-check-label" for="agree2">동의하지 않음</label></div>
+				</td>
+
+
+						
 			<th scope="col"><b>추천인</b></th>
-			<td></td>
+			<th></th>
 		</tr>
 		
 		<tr>
 			<th scope="col"><b>비밀번호 문제</b></th>
-			<td>내가 가장 자주 간 곳은?</td>
+			<td>내가 어렸을 때 자주 간 곳은?</td>
 			<th scope="col"><b>비밀번호 답</b></th>
-			<td><select name="answer">
-					<option value="">비밀번호 답</option>
+			<td>
+				<select class="answer" aria-label="passwordanswer">
+					<option selected>답을 선택하세요.</option>
 					<option value="피시방">피시방</option>
 					<option value="노래방">노래방</option>
 					<option value="도서관">도서관</option>
 					<option value="학원">학원</option>
-			</select></td>
+				</select>
+			</td>
 		</tr>
 		
 		<tr>
@@ -139,8 +166,8 @@
 		<tr>
 			<th scope="col"><b>번호</b></th>
 			<th scope="col">프로젝트 명</td>
-			<th scope="col">프로젝트 참여 기간</td>
-			<th scope="col">역할</td>
+			<th scope="col">프로젝트 참여 기간</th>
+			<th scope="col">역할</th>
 		</tr>
 		
 		<tr>
@@ -169,34 +196,77 @@
 		</tr>
 		
 		<tr>
-			<td colspan="4"><input type="checkbox" name="hobby" value="독서"
-				checked="checked">독서
-			<input type="checkbox" name="hobby" value="영화감상"
-				checked="checked">영화감상
-			<input type="checkbox" name="hobby" value="게임"
-				checked="checked">게임
-			<input type="checkbox" name="hobby" value="노래감상"
-				checked="checked">노래 감상
-			<input type="checkbox" name="hobby" value="경기시청"
-				checked="checked">이 스포츠 경기 시청
-			<input type="checkbox" name="hobby" value="만화감상">만화
-				감상
-			<input type="checkbox" name="hobby" value="유튜브시청"
-				checked="checked">유튜브 시청
-			<input type="checkbox" name="hobby" value="영화감상">퍼즐</td>
+		
+			<div class="form-check form-check-inline">
+				<td colspan="4">
+
+				<input class="form-check-input" type="checkbox" id="hobby" 
+				name="hobby" value="독서" checked="checked">
+				<label class="form-check-label" for="hobby">독서</label>
+
+				<input class="form-check-input" type="checkbox" id="hobby" 
+				name="hobby" value="영화감상" checked="checked">
+				<label class="form-check-label" for="hobby">영화감상</label>
+							
+				<input class="form-check-input" type="checkbox" id="hobby" 
+				name="hobby" value="게임" checked="checked">
+				<label class="form-check-label" for="hobby">게임</label>
+				
+				<input class="form-check-input" type="checkbox" id="hobby" 
+				name="hobby" value="노래감상" checked="checked">
+				<label class="form-check-label" for="hobby">노래 감상</label>
+				
+				<input class="form-check-input" type="checkbox" id="hobby" 
+				name="hobby" value="시청" checked="checked">
+				<label class="form-check-label" for="hobby">e-스포츠 경기 시청</label>
+
+				<input class="form-check-input" type="checkbox" id="hobby" 
+				name="hobby" value="유튜브" checked="checked">
+				<label class="form-check-label" for="hobby">유튜브 시청</label>
+
+				<input class="form-check-input" type="checkbox" id="hobby" 
+				name="hobby" value="퍼즐">
+				<label class="form-check-label" for="hobby">퍼즐</label>
+
+				<input class="form-check-input" type="checkbox" id="hobby" 
+				name="hobby" value="만화">
+				<label class="form-check-label" for="hobby">만화</label>												
+				</td>
+			</div>
+
 		</tr>
+
+		<tr>
+			<td><b>결혼 여부</b></td>				
+
+				<div class="form-check">
+					<td>
+					<input class="form-check-input" type="radio" name="marry1" 
+					id="marry1" value="미혼" checked="checked">
+					<label class="form-check-label" for="marry1" >미혼</label>
+					
+					<input class="form-check-input" type="radio" name="marry1" 
+					id="marry1" value="기혼">
+					<label class="form-check-label" for="marry1" >기혼</label>
+					</td>
+				</div>
+				
+			<td><b>자녀 유무</b></td>
+
+				<div class="form-check">
+					<td>
+					<input class="form-check-input" type="radio" name="marry2" 
+					id="marry2" value="있음">
+					<label class="form-check-label" for="marry2" >있음</label>
+					
+					<input class="form-check-input" type="radio" name="marry2" 
+					id="marry2" value="없음" checked="checked">
+					<label class="form-check-label" for="marry2" >없음</label>
+					</td>
+				</div>
+			</tr>
 
 		
-		<tr>
-			<td><b>결혼 여부</b></td>
-			<td><input type="radio" name="marry1" value="미혼"
-				checked="checked">미혼 <input type="radio" name="marry1"
-				value="기혼">기혼</td>
-			<td><b>자녀 유무</b></td>
-			<td><input type="radio" name="marry2" value="있음">있음 <input
-				type="radio" name="marry2" value="없음" checked="checked">없음</td>
-		</tr>
-
 		<tr>
 			<td><b>좋아하는 색</b></td>
 			<td bgcolor="CD0000" wdith="150px"></td>
@@ -204,22 +274,41 @@
 			<td bgcolor="FFA500" wdith="150px"></td>
 		</tr>
 
-		<td colspan="4"><b>자기소개</b></td>
+		<tr>
+			<td colspan="4"><b>자기소개</b></td>
+		</tr>
+		
 		<tr>
 			<td colspan="4">
 			<textarea rows="5" cols="108" name="contents">어쩌구저쩌구 안녕하세요 배예은이라고합니다 다들 새해를 맞아 행복하고 즐거운 날 보내셨으면 좋겠고 다들 즐거운 소식만 들리는 날이었으면 좋겠습니다 그리고 지금은 오후 여덟 시가 넘었는데 얼른 끝내고 밥 먹고 싶습니다 진짜 배고픕니다</textarea></td>
 		</tr>
-
-		<td colspan="4"><b>개인정보 유효기간</b></td>
-
-		<tr>
-			<td colspan="4"><input type="radio" name="info" value="1years">1년
-			<input type="radio" name="info" value="3years">3년
-			<input type="radio" name="info" value="5years">5년
-			<input type="radio" name="info" value="10years"
-				checked="checked">10년</td>
-		</tr>
 	
+		<tr>
+			<td colspan="4"><b>개인정보 유효기간</b></td>
+		</tr>
+		
+		<tr>
+			<div class="form-check">		
+				<td colspan="4">
+					<input class="form-check-input" type="radio" name="info" 
+					id="info" value="1years">
+					<label class="form-check-label" for="info" >1년</label>
+					
+					<input class="form-check-input" type="radio" name="info" 
+					id="info" value="3years">
+					<label class="form-check-label" for="info" >3년</label>
+					
+					<input class="form-check-input" type="radio" name="info" 
+					id="info" value="5years">
+					<label class="form-check-label" for="info" >5년</label>
+					
+					<input class="form-check-input" type="radio" name="info" 
+					id="info" value="10years" checked="checked">
+					<label class="form-check-label" for="info" >10년</label>
+				</td>															
+			</div>
+
+		</tr>
 	</table>
 <br>
 
