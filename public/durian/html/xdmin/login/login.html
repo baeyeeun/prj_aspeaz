@@ -8,23 +8,70 @@
 
     <title>로그인 페이지</title>
   </head>
-  
+ <style type="text/css">
+ 	.btn{
+
+ 	}
+ 
+ 	.or{
+ 	 text-align: center;
+ 	}
+ 	
+ 	.img1{
+ 	 width: 55px;
+ 	 height: 55px;
+ 	 /*display: block;
+ 	 margin-left: auto;
+ 	 margin-right: auto;*/
+ 	}
+ 	
+ 
+ </style> 
   <body>
 
 <div class="container">
   <div class="row">
+ 	<div class="col">
+ 	 <img alt="" src="">
+ 	 <p class="fs-1 fw-bold">boom, boo, book!</p>
+ 	 <p class="fs-6 fw-light">LOGIN PAGE</p>
+ 	</div>
+ 	
+ 	<div class="row-cols-1 gy-3">
     <div class="col">
       <div class="mb-3">
-       <input type="email" class="form-control" id="floatingInput" placeholder="ID">
-      </div>
-      
+       <input type="text" class="form-control" id="floatingInput" placeholder="ID">
+      </div>     
       <div class="mb-3">
        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
       </div>
-
+      <div class="form-check form-switch">
+       <input class="form-check-input" type="checkbox" role="switch" id="remember">
+       <label class="form-check-label" for="rememver">automatic login</label>
+      </div>
+      <div class="d-grid gap-2">
+       <button class="btn btn-primary" type="button">login</button>
+      </div>
+     </div>
+     </div>    
+     
+       <div class="row">
+		<div class="col">
+			<p class="or"><br>또는</p>
+		</div>
+	  </div>
+	  
+       <div class="row">
+		<div class="col">
+			<img class="img1" alt="kakaotlak" src="../../../images/kakao.png">
+			<img class="img1" alt="google" src="../../../images/google.png">
+			<img class="img1" alt="apple" src="../../../images/apple.png">
+		</div>
+      </div>     
+      
     </div>
-  </div>
-</div>
+    </div>
+
 
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
