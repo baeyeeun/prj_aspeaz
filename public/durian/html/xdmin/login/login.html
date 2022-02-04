@@ -37,12 +37,19 @@
  	}
  	
  	.img1{
- 	 width: 50px;
- 	 height: 50px;
+ 	 width: 80px;
+ 	 height: 80px;
  	 /*display: block;
  	 margin-left: auto;
  	 margin-right: auto;*/
  	 
+ 	 border: 10px hidden white;
+ 	 padding: 10px;
+ 	 
+ 	}
+ 	
+ 	.imgs{
+ 	 	 text-align:center;
  	}
  	
  	.btn, .btn:hover{
@@ -70,6 +77,17 @@
  	
  	}
  	
+ 	.form-check{
+ 	
+ 	margin: 10px;
+ 	}
+ 	
+ 	.fs-1, .fs-6, .seach{
+ 	
+ 	text-align: center;
+ 	
+ 	}
+ 	
 .form-control::-webkit-input-placeholder { /* WebKit browsers */ color: #ffffff; }
 .form-control:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ color: #ffffff; opacity: 1; }
 .form-control::-moz-placeholder { /* Mozilla Firefox 19+ */ color: #ffffff; opacity: 1; }
@@ -83,18 +101,18 @@
 
 <div class="container">
   <div class="row">
- 	<div class="col-12">
+ 	<div class="col">
  	 <img alt="" src="">
  	 <p class="fs-1 fw-bold">boom, boom, book!</p>
  	 <p class="fs-6 fw-light">LOGIN PAGE</p>
  	</div>
  	
- 	<div class="row-cols-1 gy-3">
-    <div class="col-10">
-      <div class="mb-3">
+ 	<div class="row">
+    <div class="col">
+      <div class="col-sm-12">
        <input type="text" class="form-control" id="id" placeholder="ID">
       </div>     
-      <div class="mb-3">
+      <div class="col-sm-12">
        <input type="password" class="form-control" id="password" placeholder="Password">
       </div>
       <div class="form-check form-switch">
@@ -109,13 +127,13 @@
      </div>    
      
        <div class="row">
-		<div class="col-10">
+		<div class="col-sm-12">
 			<p class="or"><br>또는</p>
 		</div>
 	  </div>
 	  
        <div class="row">
-		<div class="col-10">
+		<div class="imgs col-sm-12">
 			<img class="img1" alt="kakaotlak" src="../../../images/xdmin/kakao.png">
 			<img class="img1" alt="google" src="../../../images/xdmin/google.png">
 			<img class="img1" alt="apple" src="../../../images/xdmin/apple.png">
