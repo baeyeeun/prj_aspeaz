@@ -24,102 +24,140 @@
 		height:100%;
  	}
  	
- 	.row{
+ 	.d-flex{
  	
+		margin-top: 30px;
+
  	}
+ 	
+ 	.login{
+ 		text-align: right;
+ 	}
+ 	
  
  </style> 
   <body>
 
 	<div class="container">
-	 <div class="row">
-      <div class="col">
-       로그인
-      </div>
-      </div>
       
 	 <div class="row">
       <div class="col">
 
-       <ul class="nav nav-pills">
-
-  		<li class="nav-item">
-		 <a class="nav-link active" aria-current="page" href="#">boom, boom, book!</a>
-        </li>
-
- 		 <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">국내도서</a>
-           <ul class="dropdown-menu">
-      	 	 <li><a class="dropdown-item" href="#">소설/시 | 에세이</a></li>
-     		 <li><a class="dropdown-item" href="#">인문 | 역사</a></li>
-    		 <li><a class="dropdown-item" href="#">예술 | 종교</a></li>
-    		 <li><a class="dropdown-item" href="#">사회 | 과학</a></li>
-     		 <li><a class="dropdown-item" href="#">경제 경영</a></li>
-    		 <li><a class="dropdown-item" href="#">만화 | 라이트 노벨</a></li>
-    		 <li><a class="dropdown-item" href="#">여행 | 잡지</a></li>
-  	   	  </ul>
- 		</li>
- 		  <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">해외도서</a>
-           <ul class="dropdown-menu">
-      	 	 <li><a class="dropdown-item" href="#">소설/시 | 에세이</a></li>
-     		 <li><a class="dropdown-item" href="#">인문 | 역사</a></li>
-    		 <li><a class="dropdown-item" href="#">예술 | 종교</a></li>
-    		 <li><a class="dropdown-item" href="#">사회 | 과학</a></li>
-     		 <li><a class="dropdown-item" href="#">경제 경영</a></li>
-    		 <li><a class="dropdown-item" href="#">만화 | 라이트 노벨</a></li>
-    		 <li><a class="dropdown-item" href="#">여행 | 잡지</a></li>
-  	   	  </ul> 	   	  
- 		</li>
-  		  <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">e-book</a>
-           <ul class="dropdown-menu">
-      	 	 <li><a class="dropdown-item">장르소설</a></li>
-     		 <li><a class="dropdown-item" href="#">로맨스 | BL</a></li>
-    		 <li><a class="dropdown-item" href="#">판타지/무협</a></li>
-    		 <li><a class="dropdown-item">단행본</a></li>
-     		 <li><a class="dropdown-item" href="#">경제 경영</a></li>
-    		 <li><a class="dropdown-item" href="#">자기계발</a></li>
-    		 <li><a class="dropdown-item" href="#">인문 | 사회 정치</a></li>
-    		 <li><a class="dropdown-item" href="#">역사 | 종교</a></li>
-    		 <li><a class="dropdown-item" href="#">만화</a></li>
-  	   	  </ul> 	   	  
- 		</li>		
-  		  <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">음반</a>
-           <ul class="dropdown-menu">
-      	 	 <li><a class="dropdown-item" href="#">가요</a></li>
-     		 <li><a class="dropdown-item" href="#">클래식</a></li>
-    		 <li><a class="dropdown-item" href="#">POP</a></li>
-    		 <li><a class="dropdown-item" href="#">ROCK</a></li>
-     		 <li><a class="dropdown-item" href="#">재즈</a></li>
-    		 <li><a class="dropdown-item" href="#">OST</a></li>
-    		 <li><a class="dropdown-item" href="#">뮤직 DVD | 뮤직 블루레이</a></li>
-    		 <li><a class="dropdown-item" href="#">유아/어린이/영상</a></li>
-    		 <li><a class="dropdown-item" href="#">뉴에이지</a></li>
-    		 <li><a class="dropdown-item" href="#">종교음악</a></li>
-    		 <li><a class="dropdown-item" href="#">국악</a></li>
-  	   	  </ul> 	   	  
- 		</li>	
-  		  <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">중고</a>
-           <ul class="dropdown-menu">
-      	 	 <li><a class="dropdown-item">중고도서</a></li>
-     		 <li><a class="dropdown-item" href="#">가정과 생활</a></li>
-    		 <li><a class="dropdown-item" href="#">국어/외국어</a></li>
-    		 <li><a class="dropdown-item" href="#">대학 교재</a></li>
-     		 <li><a class="dropdown-item" href="#">소설/시 | 에세이</a></li>
-    		 <li><a class="dropdown-item" href="#">만화</a></li>
-    		 <li><a class="dropdown-item" href="#">참고서</a></li>
-  	   	  </ul> 	   	  
- 		</li>
-  		  <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">굿즈</a>
-           <ul class="dropdown-menu">
-      	 	 <li><a class="dropdown-item" href="#">소설/시 | 에세이</a></li>
-  	   	  </ul> 	   	  
- 		</li>		
-		</ul>
+ 	 <nav class="navbar navbar-light bg-light fixed-top">
+  	  <div class="container-fluid">
+	   <a class="navbar-brand" href="#">boom, boom, book!</a>
+       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+	   </button>
+ 
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">boom, boom, book!</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              국내 도서
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+              <li><a class="dropdown-item" href="#">소설/시 | 에세이</a></li>
+              <li><a class="dropdown-item" href="#">인문 | 역사</a></li>
+              <li><a class="dropdown-item" href="#">예술 | 종교</a></li>
+              <li><a class="dropdown-item" href="#">사회 | 과학</a></li>
+              <li><a class="dropdown-item" href="#">경제 경영</a></li>
+              <li><a class="dropdown-item" href="#">자기계발</a></li>
+              <li><a class="dropdown-item" href="#">만화 | 라이트노벨</a></li>
+              <li><a class="dropdown-item" href="#">여행 | 잡지</a></li>
+            </ul>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              해외 도서
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+              <li><a class="dropdown-item" href="#">소설/시 | 에세이</a></li>
+              <li><a class="dropdown-item" href="#">인문 | 역사</a></li>
+              <li><a class="dropdown-item" href="#">예술 | 종교</a></li>
+              <li><a class="dropdown-item" href="#">사회 | 과학</a></li>
+              <li><a class="dropdown-item" href="#">경제 경영</a></li>
+              <li><a class="dropdown-item" href="#">자기계발</a></li>
+              <li><a class="dropdown-item" href="#">만화 | 라이트노벨</a></li>
+              <li><a class="dropdown-item" href="#">여행 | 잡지</a></li>
+            </ul>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              e-book
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+              <li><a class="dropdown-item">장르소설</a></li>
+              <li><a class="dropdown-item" href="#">로맨스 | BL</a></li>
+              <li><a class="dropdown-item" href="#">판타지/무협</a></li>
+              <li><a class="dropdown-item">단행본</a></li>
+              <li><a class="dropdown-item" href="#">소설 | 에세이</a></li>
+              <li><a class="dropdown-item" href="#">자기계발</a></li>
+              <li><a class="dropdown-item" href="#">인문 | 사회 정치</a></li>
+              <li><a class="dropdown-item" href="#">역사 | 종교</a></li>
+              <li><a class="dropdown-item" href="#">만화</a></li>   
+            </ul>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              음반
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+              <li><a class="dropdown-item" href="#">음반</a></li>
+              <li><a class="dropdown-item" href="#">가요</a></li>
+              <li><a class="dropdown-item" href="#">클래식</a></li>
+              <li><a class="dropdown-item" href="#">POP</a></li>
+              <li><a class="dropdown-item" href="#">ROCK</a></li>
+              <li><a class="dropdown-item" href="#">재즈</a></li>
+              <li><a class="dropdown-item" href="#">OST</a></li>
+              <li><a class="dropdown-item" href="#">뮤직 DVD / 블루레이</a></li>
+              <li><a class="dropdown-item" href="#">유아 / 어린이 / 영상</a></li>
+              <li><a class="dropdown-item" href="#">뉴에이지</a></li>
+              <li><a class="dropdown-item" href="#">종교음악</a></li>
+              <li><a class="dropdown-item" href="#">국악</a></li>                  
+            </ul>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              중고
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+              <li><a class="dropdown-item" href="#">중고도서</a></li>
+              <li><a class="dropdown-item" href="#">가정과 생활</a></li>
+              <li><a class="dropdown-item" href="#">국어/외국어</a></li>
+              <li><a class="dropdown-item" href="#">대학교재</a></li>
+              <li><a class="dropdown-item" href="#">소설/시 | 에세이</a></li>
+              <li><a class="dropdown-item" href="#">만화</a></li>
+              <li><a class="dropdown-item" href="#">참고서</a></li>
+            </ul>           
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              굿즈
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+            </ul>           
+          </li>
+             <li>
+               <hr class="dropdown-divider">     
+               <a class="login" href="#">로그인</a>
+             </li>          
+        </ul>
+        <form class="d-flex">  
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</nav>
+ 
       </div>
        <div class="row">
       <div class="col">
