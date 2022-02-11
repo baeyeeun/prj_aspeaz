@@ -24,6 +24,12 @@
   	
   	}
  
+ 	.container-fluid, .a.nav-link{
+
+ 		color: #ffffff;
+ 		text-decoration: none;
+ 	}
+
   
   </style>
   <body>
@@ -48,8 +54,28 @@
 
 	<div class="row">
 	 <div class="col">
-      메뉴 설정 게시판 | 회원관리 | 다른 관리
-	 </div>
+      <nav class="navbar navbar-expand navbar-dark bg-dark">
+       <div class="container-fluid">
+       <a class="navbar-brand" href="#">관리</a>
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+       </button>
+
+      <div class="collapse navbar-collapse">
+       <ul class="navbar-nav me-auto">
+       
+       <li class="nav-item">
+       <a class="nav-link" href="#">회원 관리</a>
+       </li>
+
+       <li class="nav-item">
+       <a class="nav-link" href="#">게시판 관리</a>
+       </li>
+       
+       </ul>
+      </div>
+    </div>
+  </nav>
 	</div>
 	
 	
@@ -227,7 +253,7 @@
 
 </div>
 </div>
-
+</div>
 
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
